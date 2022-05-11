@@ -168,7 +168,7 @@ def sign_up():
                     budgetCount += g.price """
                     lunch.remove(g)   
         else:
-            difference = caloriess - getCalorieIntake * .6
+            difference = caloriess - getCalorieIntake * .4
             if difference > 200:
                 for g in food:
                     for i in range(int(difference) - 30, int(difference) + 30):
@@ -179,7 +179,7 @@ def sign_up():
         """ dinner """
         dinner = []
         
-        while caloriess < getCalorieIntake *  1.5:
+        while caloriess < getCalorieIntake *  .7:
             for q in meals:
                 if ("Dinner" in q.type):
                     dinner.append(q)
