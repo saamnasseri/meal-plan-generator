@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Results</title>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainapp.css') }}">
+    <script src="print.js"></script>
 
    
 
@@ -16,6 +17,7 @@
                 margin-left: 20px;
                 font-size: 35px;">Your daily macro breakdown is: {{getCalorieIntake|string() + " calories"}}, {{weight|string() + " grams of protein"}}
     </h2>
+    <div id="printable">
     <h2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
               margin-left: 20px;">Your meal plan is: <br>
     </h2>
@@ -44,6 +46,9 @@
         {% endfor%}
       </li>
       
-    </ul>   
+    </ul>
+  </div>
+    <button type="submit" name="printButton" value ="triggered" onclick="printJS('printable', 'html')" id="printButton">Print meal plan</button>
+   
 </body>
 </html> 

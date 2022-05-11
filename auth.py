@@ -206,7 +206,9 @@ def sign_up():
         
         for items in discard:
             meals.append(items)
-        
+      
+
+
         return food
         
     
