@@ -29,10 +29,11 @@ legend, label{
   and (-webkit-min-device-pixel-ratio: 3) { 
     .header-text{
         text-align: right;
-        margin-top: 15px;
+        margin-top: 12px;
         margin-bottom: 15px;
         font-size: 15px;
         float: right;
-        
+        position: absolute;
+        margin-right: 5px;
     }   
 }
