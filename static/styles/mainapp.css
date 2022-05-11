@@ -28,7 +28,8 @@ legend, label{
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     .header-text{
-        padding-right: 25px;
+        justify-content: center;
+        text-align: center;
         line-break: normal;
         width: 100%;
         
