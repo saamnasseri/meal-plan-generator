@@ -1,3 +1,4 @@
+from calendar import c
 from flask import Blueprint, render_template, request
 from models import Meal
 import random
@@ -134,8 +135,9 @@ def sign_up():
                     meals.remove(b)
             food.append(random.choice(breakfast))
             for f in food:
-                caloriess += f.calories
+                
                 if f in breakfast:
+                    caloriess += f.calories
                     breakfast.remove(f)
         else:
             difference = caloriess - getCalorieIntake  * .3
@@ -144,7 +146,7 @@ def sign_up():
                     for i in range(int(difference) - 30, int(difference) + 30):
                         if i == g.calories:
                             food.remove(g)
-    
+        caloriess  = .3 * getCalorieIntake
         """ lunch """
         lunch = []
         
@@ -158,8 +160,9 @@ def sign_up():
             food.append(random.choice(lunch))
     
             for g in food:
-                caloriess += g.calories
+                
                 if g in lunch:
+                    caloriess += g.calories
                     """ 
                     protein += g.protein
                     budgetCount += g.price """
@@ -172,11 +175,11 @@ def sign_up():
                         if i == g.calories:
                             food.remove(g)
         
-        
+        caloriess =  .6  *  getCalorieIntake
         """ dinner """
         dinner = []
         
-        while caloriess < getCalorieIntake *1.3:
+        while caloriess < getCalorieIntake *  1.5:
             for q in meals:
                 if ("Dinner" in q.type):
                     dinner.append(q)
@@ -184,8 +187,9 @@ def sign_up():
                     meals.remove(q)
             food.append(random.choice(dinner))
             for x in food:
-                caloriess += q.calories
+                
                 if x in dinner:
+                    caloriess += q.calories
                     """ 
                     protein += q.protein
                     budgetCount += q.price """
@@ -200,7 +204,7 @@ def sign_up():
         
         for items in discard:
             meals.append(items)
-        print (caloriess)
+        
         return food
         
     
