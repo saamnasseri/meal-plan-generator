@@ -29,7 +29,9 @@ legend, label{
   and (-webkit-min-device-pixel-ratio: 3) { 
     .header-text{
         text-align: center;
-       margin-top: 15px;
+        margin-top: 15px;
         margin-bottom: 15px;
+        font-size: 15px;
+        margin-left: 15px;
     }   
 }
