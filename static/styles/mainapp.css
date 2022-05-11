@@ -28,12 +28,11 @@ legend, label{
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     .header-text{
-        text-align: center;
+        text-align: right;
         margin-top: 15px;
         margin-bottom: 15px;
         font-size: 15px;
-        margin-left: 5px;
         float: right;
-        margin-right: 5px;
+        margin-right: 3px;
     }   
 }
