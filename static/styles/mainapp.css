@@ -32,6 +32,8 @@ legend, label{
         margin-top: 15px;
         margin-bottom: 15px;
         font-size: 15px;
-        margin-left: 15px;
+        margin-left: 5px;
+        float: right;
+        margin-right: 5px;
     }   
 }
