@@ -12,10 +12,25 @@ legend, label{
     margin-left: 1em;
     margin-top: 1em;
 }
+.header-text{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    position: relative;
+    display: block;
+    float: right;
+    width: 30%;
+    padding-right: 30%;
+    
+}
 
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-    
+    .header-text{
+        padding-right: 25px;
+        line-break: normal;
+        width: 100%;
+        display: none;
+    }   
 }
