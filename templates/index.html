@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Automated Meal Planner</title>
+    <link rel= "stylesheet" type= "text/css" href = "{{ url_for('static', filename='/styles/mainpage.css') }}">
+
     
 
  
@@ -13,6 +15,14 @@
     <style>
       
     </style>
+    <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    position: relative;
+    display: block;
+    float: right;
+    width: 30%;
+    padding-right: 30%
+    ;">Generate meal plans by proving your information to our inteliigent algorithm. Report bugs to saamnasseri10@gmail.com.<br>No ads. Ever.</h1>
     <form method="POST" action="save">
     <legend>Select your goal.</legend>
     <div class="options">
@@ -102,6 +112,7 @@
 
   </div>
 </form>
-<h1 id="test" style="display: none;">test</h1>
+
   </body>
+
 </html>

@@ -3,7 +3,7 @@ from flask import Blueprint, render_template, request
 from models import Meal
 import random
 
-auth = Blueprint('auth', __name__)
+auth = Blueprint('auth', __name__, template_folder='templates', static_folder='static')
 
 
 @auth.route('/', methods=['GET', 'POST'])
