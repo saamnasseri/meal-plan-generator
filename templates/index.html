@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Automated Meal Planner</title>
-    <link rel= "stylesheet" type= "text/css" href = "{{ url_for('static', filename='/styles/mainpage.css') }}">
+    <link rel= "stylesheet" type= "text/css" href = "{{ url_for('static',filename='styles/mainapp.css') }}">
 
     
 
@@ -24,9 +24,9 @@
     padding-right: 30%
     ;">Generate meal plans by proving your information to our inteliigent algorithm. Report bugs to saamnasseri10@gmail.com.<br>No ads. Ever.</h1>
     <form method="POST" action="save">
-    <legend>Select your goal.</legend>
+    
     <div class="options">
-
+      <legend>Select your goal</legend>
       
         <input type="radio" id="build" name="goal" value="Build muscle">
         <label for="build">Build muscle</label><br>
@@ -34,7 +34,7 @@
         <label for="lose">Lose fat</label><br>
       <br>
     
-    <legend>Select your fitness level.</legend>
+    <legend>Select your fitness level</legend>
     
         
       <input type="radio" id="sedentary" name="fitness level" value="Sedentary">
@@ -49,7 +49,7 @@
       <label for ="extra">Extraordinary</label><br>
     <br>
 
-    <legend>Select your budget.</legend>
+    <legend>Select your budget</legend>
    
       <input type="radio" id="low" name="budget" value="$">
       <label for="low">$</label><br>
@@ -59,7 +59,7 @@
       <label for="high">$$$</label><br>
     <br>
 
-    <legend>Select your sex.</legend>
+    <legend>Select your sex</legend>
         
         <input type="radio" id = "male" name="sex" value="Male">
         <label for="male">Male</label><br>
@@ -67,21 +67,21 @@
         <label for = "female">Female</laberl><br>
     <br>
 
-    <legend>Enter your weight.</legend>
+    <legend>Enter your weight</legend>
           <input type="text" id="weight" name="weight">
           <label for ="weight"></label><br>
     <br>
-    <legend>Enter your height in inches.</legend>
+    <legend>Enter your height in inches</legend>
           <input type="text" id="height" name="height">
           <label  for="height"></label><br>
     <br>
 
-    <legend>Enter your age.</legend>
+    <legend>Enter your age</legend>
           <input  type="text" id="age" name="age">
           <label for="age"></label><br>
     <br>
 
-    <legend>Select any restrictions. <span style="color: red;">[beta]</span></legend>
+    <legend>Select any restrictions <span style="color: red;">[beta]</span></legend>
           <input type="radio" id="none" name="restrictions" value="None">
           <label for="none">None</label><br>
           <input type="radio" id="vegan"  name="restrictions"  value="Vegan">

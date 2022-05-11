@@ -135,7 +135,6 @@ def sign_up():
                     meals.remove(b)
             food.append(random.choice(breakfast))
             for f in food:
-                
                 if f in breakfast:
                     caloriess += f.calories
                     breakfast.remove(f)
@@ -143,9 +142,9 @@ def sign_up():
             difference = caloriess - getCalorieIntake  * .3
             if difference > 200:
                 for g in food:
-                    for i in range(int(difference) - 30, int(difference) + 30):
-                        if i == g.calories:
-                            food.remove(g)
+                    food.remove(g)
+            else:
+                pass
         caloriess  = .3 * getCalorieIntake
         """ lunch """
         lunch = []
@@ -174,6 +173,7 @@ def sign_up():
                     for i in range(int(difference) - 30, int(difference) + 30):
                         if i == g.calories:
                             food.remove(g)
+            else: pass
         
         caloriess =  .6  *  getCalorieIntake
         """ dinner """
@@ -201,6 +201,8 @@ def sign_up():
                     for i in range(int(difference) - 30, int(difference) + 30):
                         if i == g.calories:
                             food.remove(g)
+            else: pass
+                    
         
         for items in discard:
             meals.append(items)

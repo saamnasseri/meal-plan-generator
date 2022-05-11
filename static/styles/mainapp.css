@@ -1,14 +1,21 @@
 body{
-    background-color: black;
+    background-color: lightgray;
     
 }
-legend{
-    color: white;
-    margin-bottom: .5em;
-    margin-top: 2em;
+legend, label{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 .options{
     color: white;
-    
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
     
 }
