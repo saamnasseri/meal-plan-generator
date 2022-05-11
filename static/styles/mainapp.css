@@ -33,7 +33,7 @@ legend, label{
         margin-bottom: 15px;
         font-size: 15px;
         float: right;
-        position: absolute;
+        position: relative;
         margin-right: 5px;
     }   
 }
