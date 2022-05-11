@@ -145,7 +145,7 @@ def sign_up():
                     food.remove(g)
             else:
                 pass
-        caloriess  = .3 * getCalorieIntake
+        
         """ lunch """
         lunch = []
         
@@ -175,7 +175,7 @@ def sign_up():
                             food.remove(g)
             else: pass
         
-        caloriess =  .6  *  getCalorieIntake
+        
         """ dinner """
         dinner = []
         

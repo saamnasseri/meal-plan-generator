@@ -12,10 +12,12 @@
   </head>
 <body>
    
-     <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
-                >Your daily macro breakdown is: {{getCalorieIntake|string() + " calories"}}, {{weight|string() + " grams of protein"}}
-    </h1>
-    <h2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Your meal plan is: <br>
+     <h2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin-left: 20px;
+                font-size: 35px;">Your daily macro breakdown is: {{getCalorieIntake|string() + " calories"}}, {{weight|string() + " grams of protein"}}
+    </h2>
+    <h2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              margin-left: 20px;">Your meal plan is: <br>
     </h2>
     <ul style="display: flexbox;
               flex-direction: column;
@@ -28,7 +30,8 @@
     {% for items in a_value %}
           <p1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
                     font-style: italic; 
-                    font-size: 2rem;"> 
+                    font-size: 2rem;
+                    "> 
                     {{items[0]+": "}}
           </p1> 
           <br>
