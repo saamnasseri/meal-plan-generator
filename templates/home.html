@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Results</title>
+   
+
+  </head>
+<body>
+   
+     <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+                >Your daily macro breakdown is: {{getCalorieIntake|string() + " calories"}}, {{weight|string() + " grams of protein"}}
+    </h1>
+    <h2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Your meal plan is: <br>
+    </h2>
+    <ul style="display: flexbox;
+              flex-direction: column;
+              overflow-y:auto;
+              column-count: 1;
+              width: 50%;
+              
+              line-break: normal;"> 
+      
+    {% for items in a_value %}
+          <p1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                    font-style: italic; 
+                    font-size: 2rem;"> 
+                    {{items[0]+": "}}
+          </p1> 
+          <br>
+      
+      <li style="list-style-type: none;">
+          {% for f in items[1] %}
+            <p1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">{{f|string()}} </p1> <br>
+      </li> {% endfor %}
+          <br>
+        {% endfor%}
+      </li>
+      
+    </ul>   
+</body>
+</html> 

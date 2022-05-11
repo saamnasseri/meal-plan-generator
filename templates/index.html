@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Automated Meal Planner</title>
+  
+
+ 
+  </head>
+  <body>
+    <style>
+      
+    </style>
+    <form method="POST" action="save">
+    <legend>Select your goal.</legend>
+    <div class="options">
+
+      
+        <input type="radio" id="build" name="goal" value="Build muscle">
+        <label for="build">Build muscle</label><br>
+        <input type="radio" id="lose" name="goal" value="Lose Fat">
+        <label for="lose">Lose fat</label><br>
+      <br>
+    
+    <legend>Select your fitness level.</legend>
+    
+        
+      <input type="radio" id="sedentary" name="fitness level" value="Sedentary">
+      <label for="sedentary">Sedentary</label><br>
+      <input type="radio" id="some" name="fitness level" value="Some">
+      <label for="some">Some</label><br>
+      <input type="radio" id ="average" name ="fitness level" value="Some">
+      <label for="average">Average</label><br>
+      <input type="radio" id ="good" name="fitness level" value="Good">
+      <label for = "good">Good</label><br>
+      <input type="radio" id="extra" name ="fitness level" value="Extraordinary">
+      <label for ="extra">Extraordinary</label><br>
+    <br>
+
+    <legend>Select your budget.</legend>
+   
+      <input type="radio" id="low" name="budget" value="$">
+      <label for="low">$</label><br>
+      <input type="radio" id="medium" name="budget" value="$$">
+      <label for="medium">$$</label><br>
+      <input type="radio" id ="high" name ="budget" value="$$$">
+      <label for="high">$$$</label><br>
+    <br>
+
+    <legend>Select your sex.</legend>
+        
+        <input type="radio" id = "male" name="sex" value="Male">
+        <label for="male">Male</label><br>
+        <input type ="radio" id = "female" name="sex" value ="Female">
+        <label for = "female">Female</laberl><br>
+    <br>
+
+    <legend>Enter your weight.</legend>
+          <input type="text" id="weight" name="weight">
+          <label for ="weight"></label><br>
+    <br>
+    <legend>Enter your height.</legend>
+          <input type="text" id="height" name="height">
+          <label  for="height"></label><br>
+    <br>
+
+    <legend>Enter your age</legend>
+          <input  type="text" id="age" name="age">
+          <label for="age"></label><br>
+    <br>
+
+    <legend>Select any restrictions.</legend>
+          <input type="radio" id="none" name="restrictions" value="None">
+          <label for="none">None</label><br>
+          <input type="radio" id="vegan"  name="restrictions"  value="Vegan">
+          <label for="restrictions">Vegan</label><br>
+          <input type="radio" id="ketogenic" name="restrictions" value="Ketogenic">
+          <label for="ketogenic">Ketogenic</label><br>
+          <input type="radio" id="pescatarian" name="restrictions" value="Pescatarian">
+          <label for="pescatarian">Pescatarian</label><br>  
+    <br>
+    <legend>How many days would you like to generate?</legend>
+          <input type="number" id = "days" name = "days" value="Number"><br>   
+    <br>
+    <button type="submit" id ="myButton" onclick="toggle()">Generate Meals</button>
+      <style>
+        button{
+          height: 40px;
+          width: 100px;
+          background-color: crimson;
+          color: white;
+        }
+      </style>
+      <script>
+      function toggle() {
+        var text = document.getElementById('test')
+      }
+        
+      </script>
+
+  </div>
+</form>
+<h1 id="test" style="display: none;">test</h1>
+  </body>
+</html>
