@@ -123,9 +123,6 @@ def sign_up():
         discard = []
         """ create list of possible breakfasts and select one at random and remove it from meals list. after while loop finishes, re-add meals."""
         breakfast = []
-        break_cals = getCalorieIntake * .33
-        lunch_cals = getCalorieIntake * .33
-        dinner_cals = getCalorieIntake * .33
         difference = 0
         while caloriess < .3 * getCalorieIntake:
             for b in meals:
@@ -146,10 +143,11 @@ def sign_up():
             else:
                 pass
         
-        """ lunch """
+        print (caloriess)
+        caloriess = 0
         lunch = []
         
-        while caloriess < .6 * getCalorieIntake:
+        while caloriess < .3 * getCalorieIntake:
             for t in meals:
                 if ("Lunch" in t.type):
                     lunch.append(t)
@@ -157,14 +155,14 @@ def sign_up():
                     meals.remove(t)
         
             food.append(random.choice(lunch))
-    
+
             for g in food:
                 
                 if g in lunch:
                     caloriess += g.calories
-                    """ 
+                        
                     protein += g.protein
-                    budgetCount += g.price """
+                    budgetCount += g.price 
                     lunch.remove(g)   
         else:
             difference = caloriess - getCalorieIntake * .4
@@ -176,39 +174,37 @@ def sign_up():
             else: pass
         
         
-        """ dinner """
+        """ this works to generate breakfast & lunch close to the rules """
         dinner = []
+        caloriess = 0
+        while caloriess < .3 * getCalorieIntake:
+            for t in meals:
+                if ("Dinner" in t.type):
+                    dinner.append(t)
+                    discard.append(t)
+                    meals.remove(t)
         
-        while caloriess < getCalorieIntake *  .7:
-            for q in meals:
-                if ("Dinner" in q.type):
-                    dinner.append(q)
-                    discard.append(q)
-                    meals.remove(q)
             food.append(random.choice(dinner))
-            for x in food:
+
+            for g in food:
                 
-                if x in dinner:
-                    caloriess += q.calories
-                    """ 
-                    protein += q.protein
-                    budgetCount += q.price """
-                    dinner.remove(x)
+                if g in dinner:
+                    caloriess += g.calories
+                        
+                    protein += g.protein
+                    budgetCount += g.price 
+                    dinner.remove(g)   
         else:
-            difference = caloriess - getCalorieIntake
+            difference = caloriess - getCalorieIntake * .4
             if difference > 200:
                 for g in food:
                     for i in range(int(difference) - 30, int(difference) + 30):
                         if i == g.calories:
                             food.remove(g)
             else: pass
-                    
         
         for items in discard:
             meals.append(items)
-      
-
-
         return food
         
     
