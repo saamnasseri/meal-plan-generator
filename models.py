@@ -11,7 +11,7 @@ class Meal():
         self.ethnicity = ethnicity
    
     def __repr__(self) -> str:
-        rep = self.name + ' ' + str(self.calories) + ' cals, ' + str(self.protein) + ' grams protein, ' + str(self.price) + '$'
+        rep = self.name + ' ' + str(self.calories) + ' cals, ' + str(self.protein) + ' grams protein, ' + '$' + str(self.price) 
         return rep
 
 
