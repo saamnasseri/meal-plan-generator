@@ -94,7 +94,30 @@
           width: 100px;
           background-color: crimson;
           color: white;
+          
         }
+        button:hover{
+          -webkit-animation: rainbow 6s ease infinite;
+          animation: rainbow 6s ease infinite;
+          background: -webkit-linear-gradient(0deg, #2b1de8, #1ddde8, #4DF0BF,lime, white, lavender, hotpink, aqua, #2b1de8);
+          
+          
+          background-size: 900% 900%;
+          -webkit-text-fill-color: black;
+          cursor: pointer;
+}
+@keyframes  rainbow{
+
+
+0% {
+    background-position: 0 82%;
+}
+50% {
+    background-position: 100% 19%;
+}
+100% {
+    background-position: 0 82%;
+        }}
       </style>
       <script>
       function toggle() {
