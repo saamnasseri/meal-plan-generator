@@ -143,7 +143,7 @@ def sign_up():
             else:
                 pass
         
-        print (caloriess)
+        
         caloriess = 0
         lunch = []
         
