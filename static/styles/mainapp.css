@@ -23,6 +23,32 @@ legend, label{
     
 }
 
+.header-text:hover{
+    -webkit-animation: rainbow 6s ease infinite;
+    animation: rainbow 6s ease infinite;
+    background: -webkit-linear-gradient(0deg, #2b1de8, #1ddde8, #4DF0BF,lime, white, lavender, hotpink, aqua, #2b1de8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 900% 900%;
+    -webkit-text-fill-color: transparent;
+    cursor:text;
+}
+@keyframes  rainbow{
+
+
+0% {
+    background-position: 0 82%;
+}
+50% {
+    background-position: 100% 19%;
+}
+100% {
+    background-position: 0 82%;
+}
+}
+
+
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
